@@ -1,0 +1,40 @@
+{
+  "name": "tcpip-port-to-bin",
+  "version": "0.1.0",
+  "description": "Converts tcp/ip ports numbers to binary (0 to 65536)",
+  "main": "src/tcpip-port-to-bin.js",
+  "scripts": {
+	"test": "npm run test-style && make test",
+    "test-jshint": "jshint src/tcpip-port-to-bin.js test/tcpip-port-to-bin.js",
+    "test-jscs": "node_modules/jscs/bin/jscs src/tcpip-port-to-bin.js test/tcpip-port-to-bin.js",
+    "test-style": "npm run test-jshint && npm run test-jscs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ozipi/tcpip-port-to-bin.git"
+  },
+  "keywords": [
+    "ip",
+	"tcp",
+    "bin",
+    "port",
+	"ip port"
+  ],
+  "author": "Oscar Valdez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ozipi/tcpip-port-to-bin/issues"
+  },
+  "homepage": "https://github.com/ozipi/tcpip-port-to-bin#readme",
+  "dependencies": {
+    "to-binary": "*"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "jscs": "^2.11.0",
+    "jshint": "^2.9.1",
+    "istanbul": "~0.2.4",
+    "coveralls": "~2.7.1"
+  }
+}
